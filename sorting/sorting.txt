@@ -1,6 +1,7 @@
 1)selection sort ->>
 ---------------------
-  ->( Select the minimum and swap.)
+  ->( Select the minimum and swap.)    //problem link- gfg -> https://practice.geeksforgeeks.org/problems/selection-sort/1
+                                                     // ninja -> https://www.codingninjas.com/studio/problems/selection-sort_624469?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
 -------------------------------------
 
 code Example->>
@@ -72,3 +73,23 @@ int main()
 }
 
 // } Driver Code Ends
+
+=================================================================================================================================================================
+2) bubble sort ->>
+--------------------
+ -> (push the max to the last by adjacent swaps .)
+---------------------------------------------------
+problem link - 1) https://practice.geeksforgeeks.org/problems/bubble-sort/1
+              2) https://www.codingninjas.com/studio/problems/bubble-sort_624380?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+code example ->>
+===============
+
+
+
+
+
+
+
+
