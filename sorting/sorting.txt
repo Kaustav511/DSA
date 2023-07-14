@@ -1,6 +1,8 @@
 1)selection sort ->>
 ---------------------
-  -> Select the minimum and swap.
+  ->( Select the minimum and swap.)
+-------------------------------------
+
 code Example->>
 //{ Driver Code Starts
 #include <bits/stdc++.h>
@@ -21,7 +23,7 @@ class Solution
     {
         // code here such that selectionSort() sorts arr[]
     }
-     
+   ==================================================  
     void selectionSort(int arr[], int n)
     {
        for(int i=0;i<=n-2;i++){
@@ -34,6 +36,7 @@ class Solution
            }
        }
     }
+=============================================================
 };
 
 //{ Driver Code Starts.
