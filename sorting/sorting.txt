@@ -1,4 +1,4 @@
-1)selection sort ->>
+1)selection sort ->>  best,wrose,avg - O(n^2)
 ---------------------
   ->( Select the minimum and swap.)    //problem link- gfg -> https://practice.geeksforgeeks.org/problems/selection-sort/1
                                                      // ninja -> https://www.codingninjas.com/studio/problems/selection-sort_624469?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
@@ -75,7 +75,7 @@ int main()
 // } Driver Code Ends
 
 =================================================================================================================================================================
-2) bubble sort ->>
+2) bubble sort ->>   wrose,avg= O(n^2) and best = O(n)
 --------------------
  -> (push the max to the last by adjacent swaps .)
 
@@ -164,7 +164,7 @@ int main()
 // } Driver Code Ends
 
 =================================================================================================================================================================
-3) Insertion Sort ->>
+3) Insertion Sort ->>     wrose,avg= O(n^2) and best = O(n)
 ---------------------
  -> takes an element and place it on it's correct order.
 =======================================================
@@ -176,7 +176,73 @@ problem link-> 1) https://practice.geeksforgeeks.org/problems/insertion-sort/1
 code example ->>
  ----------------
 
+//{ Driver Code Starts
+// C program for insertion sort
+#include <stdio.h>
+#include <math.h>
 
+/* Function to print an array */
+void printArray(int arr[], int size)
+{
+    int i;
+    for (i=0; i < size; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+}
+
+
+// } Driver Code Ends
+
+class Solution
+{
+    public:
+    void insert(int arr[], int i)
+    {
+        //code here
+    }
+     public:
+    //Function to sort the array using insertion sort algorithm.
+    void insertionSort(int arr[], int n)
+    {
+        for (int i = 0; i < n; i++)
+    {
+        
+        int j = i;
+        while (j > 0 && arr[j-1] > arr[j])
+        {
+            int temp=arr[j-1];
+            arr[j-1]=arr[j];
+            arr[j]=temp;
+            j--;
+        }
+        
+    }
+    }
+};
+
+//{ Driver Code Starts.
+int main()
+{
+    int arr[1000],n,T,i;
+
+    scanf("%d",&T);
+
+    while(T--){
+
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+      scanf("%d",&arr[i]);
+
+    Solution ob;
+    ob.insertionSort(arr, n);
+    printArray(arr, n);
+    }
+    return 0;
+}
+
+// } Driver Code Ends
+=================================================================================================================================================================
 
 
 
