@@ -115,11 +115,14 @@ class Solution
     void bubbleSort(int arr[], int n)
     {
         for(int i=n-1;i>=1;i--){
+            int didrun=0;             // for the best case when the array is already sorted then we donn't need to traverse the whole array.
             for(int j=0;j<=i-1;j++){
                 if(arr[j] > arr[j+1]){
                     swap(arr[j],arr[j+1]);
+                    didrun=0;
                 }
             }
+            if(didrun == 0)break;
         }
     }
 ===========================================================
@@ -163,7 +166,16 @@ int main()
 =================================================================================================================================================================
 3) Insertion Sort ->>
 ---------------------
- ->
+ -> takes an element and place it on it's correct order.
+=======================================================
+problem link-> 1) https://practice.geeksforgeeks.org/problems/insertion-sort/1
+               2)https://www.codingninjas.com/studio/problems/insertion-sort_624381?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+code example ->>
+ ----------------
+
 
 
 
